@@ -1,4 +1,6 @@
 /*basic settings*/
+$color-button: #ff9d00
+
 *
   box-sizing: border-box
 
@@ -6,7 +8,8 @@ html
 	font-size: 10px
 
 body
-	font-family: Arial, sans-serif
+	font-family: 'Roboto', sans-serif
+	font-weight: 500
 
 img
 	max-width: 100%
@@ -16,5 +19,21 @@ section
 	
 .container
 	max-width: 1140px
+	width: 95%
 	margin: 0 auto
 
+.button
+	background-color: $color-button
+	border-radius: 10px
+	color: #fff
+	padding: 1.4rem 2rem
+	border: none
+	outline: none
+	cursor: pointer
+	font-size: 1.6rem
+	
+
+
+@import 'header'
+
+@import 'media'

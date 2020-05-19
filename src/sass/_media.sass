@@ -1,0 +1,42 @@
+/** Media **/
+@media( max-width: 767px )
+  .header
+    &__logo
+      background: url(../img/header/logo-mobile.png) center no-repeat
+      background-size: 100%
+      width: 45px
+      height: 45px
+    &__contacts
+      &_phons
+        margin-right: 1rem
+    &__button
+      &::before
+        display: none
+
+@media( max-width: 603px )
+  .header
+    &__contacts
+      &_phons
+        flex-direction: column
+        justify-content: center
+        font-size: 1.8rem
+        line-height: 2.5rem
+        &-1
+          margin-right: 0
+          padding-right: 0
+          border-right: none
+    
+@media( max-width: 385px )
+  .header
+    &__button
+      padding: 1.5rem
+      &::before
+        content: ''
+        display: inline-block
+        background: url(../img/header/phon-button.png) center no-repeat
+        width: 20px
+        height: 20px
+        margin-right: 0
+        vertical-align: middle
+      span
+        display: none
