@@ -1,4 +1,13 @@
 /** Media **/
+@media( max-width: 992px )
+  .main
+    &-img
+      &::before
+        display: none
+    &-offer
+      flex: 0 0 70%
+      margin-left: 2rem
+
 @media( max-width: 767px )
   .header
     &__logo
@@ -13,6 +22,15 @@
       &::before
         display: none
 
+  .main
+    &-img
+      display: none
+    &-offer
+      flex: 0 0 100%
+      margin: 0
+    &-item_2
+      display: none
+
 @media( max-width: 603px )
   .header
     &__contacts
@@ -25,6 +43,14 @@
           margin-right: 0
           padding-right: 0
           border-right: none
+
+@media( max-width: 510px )
+  .main
+    &-form
+      &__row
+        flex-direction: column
+    &__button
+      margin: 1.5rem 0
     
 @media( max-width: 385px )
   .header
