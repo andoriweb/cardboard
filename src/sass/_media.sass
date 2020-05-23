@@ -1,5 +1,7 @@
 /** Media **/
 @media( max-width: 992px )
+  section
+    padding: 10% 0
   .main
     &-img
       &::before
@@ -17,6 +19,14 @@
         font-size: 1.4rem
     &-benefits
       flex: 0 1 48%
+
+@media( max-width: 800px )
+  .products__wrap
+    flex-direction: column
+    align-items: center
+  .product
+    &__img
+      min-height: auto
 
 @media( max-width: 767px )
   .header
