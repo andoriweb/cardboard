@@ -28,6 +28,25 @@
     &__img
       min-height: auto
 
+  .production
+    text-align: center
+    &-wraper
+      flex-direction: column
+    &-slider__wrap
+      width: 100%
+      margin-top: 3rem
+    &-text
+      order: -1
+      width: 100%
+      text-align: center
+      margin: 0
+      &__title
+        width: 100%
+        transform: none
+      &__descr
+        width: 70%
+        margin: 2rem auto
+
 @media( max-width: 767px )
   .header
     &__logo
@@ -68,6 +87,12 @@
       &__wrap
         flex-direction: column
 
+  .production
+    &-slider
+      position: relative
+      &-small
+        display: none
+
 @media( max-width: 603px )
   .header
     &__contacts
@@ -80,6 +105,11 @@
           margin-right: 0
           padding-right: 0
           border-right: none
+
+  .production
+    &-text
+      &__descr
+        width: 100%
 
 @media( max-width: 510px )
   .main

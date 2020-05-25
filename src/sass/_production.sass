@@ -1,0 +1,74 @@
+/** section class="production" **/
+.production
+  &-wraper
+    display: flex
+    
+  &-slider__wrap
+    position: relative
+    display: inline-block
+    width: 55%
+    z-index: 1
+
+  &-slider
+    &__item
+      img
+        width: 100%
+
+    &-small
+      position: relative
+      margin-top: 1.5rem
+      padding: 0 20px
+      div
+        margin: 0 0.7rem
+        img
+          min-height: 8rem
+
+  &-text
+    display: inline-block
+    width: 40%
+    margin-left: 3rem
+    vertical-align: top
+
+    &__title
+      font-size: 2.8rem
+      background-color: $color-button
+      color: #fff
+      padding: 2rem 4rem
+      margin-bottom: 3rem
+      width: 110%
+      transform: translateX(-9%)
+      z-index: -1
+
+    &__descr
+      font-size: 1.6rem
+      font-weight: 300
+      line-height: 1.4
+      margin-top: 2rem
+
+  &-arrow
+    position: absolute
+    top: 0
+    height: 100%
+    padding: 1rem
+    border: 1px solid $color-button
+    cursor: pointer
+
+    &__mob
+      height: 100px
+      padding: 2rem
+      top: 50%
+      transform: translateY(-50%)
+      border: 2px solid $color-button
+
+  &-prev
+    left: 0
+    background: #fff url(../img/production/back1.png) center no-repeat
+    z-index: 1
+    &:hover
+      background: $color-button url(../img/production/back.png) center no-repeat
+
+  &-next
+    right: 0
+    background: #fff url(../img/production/next1.png) center no-repeat
+    &:hover
+      background: $color-button url(../img/production/next.png) center no-repeat
