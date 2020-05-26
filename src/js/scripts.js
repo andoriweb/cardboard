@@ -72,3 +72,30 @@ $('.production-slider-small').slick({
     }
   ]
 });
+
+$('.feetback-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<button class="feetback-arrow feetback-prev production-arrow__mob"></button>',
+  nextArrow: '<button class="feetback-arrow feetback-next production-arrow__mob"></button>',
+  responsive: [
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button class="production-arrow production-prev production-arrow__mob"></button>',
+        nextArrow: '<button class="production-arrow production-next production-arrow__mob"></button>'
+      }
+    }
+  ]
+});
