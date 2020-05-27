@@ -1,0 +1,72 @@
+/** div class="modal" **/
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  display: none
+
+  &_active
+    display: block
+
+  &__block
+    position: relative
+    margin: auto
+    max-width: 700px
+    margin-top: 5%
+    padding-bottom: 3%
+    text-align: center
+    color: #fff
+    background: #000 url(../img/modal/modal-bg.jpg) center no-repeat
+
+  &__close
+    position: absolute
+    top: -23px
+    right: -23px
+    background: none
+    color: #fff
+    font-size: 30px
+    cursor: pointer
+
+  &__title
+    font-size: 2.1rem
+    font-weight: 300
+    background-color: $color-button
+    padding: 23px 0
+    span
+      display: block
+      font-size: 2.6rem
+
+  &-form
+    &__offer
+      font-size: 3rem
+      line-height: 1.3
+      margin-top: 20px
+      span
+        display: block
+        font-size: 2.4rem
+
+    &__label
+      font-size: 2rem
+      font-weight: 300
+      margin-top: 20px
+
+    &__input
+      font-size: 1.4rem
+      font-weight: 300
+      padding: 20px
+      border-radius: 5px
+      width: 40%
+      margin-top: 15px
+
+    &__small
+      font-size: 1.4rem
+      font-weight: 300
+      margin-top: 15px
+
+    &__btn
+      padding: 18px 30px
+      border: none
+      margin: 15px 0 15px 13px
